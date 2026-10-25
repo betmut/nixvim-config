@@ -9,6 +9,7 @@
     shiftwidth = 2;        # Tab width should be 2
     cursorline = true;
     smartindent = true;
+    autoread = true;
   };
 
   highlight = {
@@ -69,6 +70,15 @@
     {
       action = "<cmd>LazyGit<CR>";
       key = "<leader>lg";
+      options = {
+        silent = true;
+      };
+    }
+
+    # WhichKey keybinds
+    {
+      action = "<cmd>WhichKey<CR>";
+      key = "<C-S-/>";
       options = {
         silent = true;
       };

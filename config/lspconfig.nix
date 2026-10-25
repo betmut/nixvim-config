@@ -3,10 +3,11 @@
     enable = true;
     servers = {
 
-      nixd.enable = true;
-      basedpyright.enable = true;
-      bashls.enable = true;
-      nushell.enable = true;
+      nixd.enable = true;		# Nix LSP
+      basedpyright.enable = true;	# Python LSP
+      bashls.enable = true;		# Bash LSP
+      nushell.enable = true;		# Nushell LSP
+      clangd.enable = true; 		# C/C++ LSP
 
       lua_ls = {
 	enable = true;
