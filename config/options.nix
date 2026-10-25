@@ -84,6 +84,22 @@
       };
     }
 
+#-------------- MarkdownPreview keybinds -------------------
+    {
+      action = "<cmd>MarkdownPreview<CR>";
+      key = "<leader>mp";
+      options = {
+        silent = true;
+      };
+    }
+    {
+      action = "<cmd>MarkdownPreviewStop<CR>";
+      key = "<leader>ms";
+      options = {
+        silent = true;
+      };
+    }
+#-----------------------------------------------------------
 
   ];
 }

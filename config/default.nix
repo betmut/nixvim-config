@@ -15,5 +15,7 @@
     ./nvim-tree.nix
     ./lazygit.nix
     ./nvim-surround.nix
+    ./markdown-preview.nix
+    ./opencode.nix
   ];
 }
