@@ -19,6 +19,8 @@
   };
 
   keymaps = [
+
+    # Telescope keybinds
     {
       action = "<cmd>Telescope find_files<CR>";
       key = "<C-f>";
@@ -27,6 +29,7 @@
       };
     }
 
+    # tree-nvim keybinds
     {
       action = "<cmd>NvimTreeToggle<CR>";
       key = "<C-t>";
@@ -35,6 +38,7 @@
       };
     }
 
+    # move to the next buffer
     {
       action = ":bn!<CR>";
       key = "<C-Right>";
@@ -43,6 +47,7 @@
       };
     }
 
+    # move to the previous buffer
     {
       action = ":bp!<CR>";
       key = "<C-Left>";
@@ -51,9 +56,19 @@
       };
     }
 
+    # delete the buffer
     {
       action = ":bd!<CR>";
       key = "<C-d>";
+      options = {
+        silent = true;
+      };
+    }
+    
+    # LazyGit keybinds
+    {
+      action = "<cmd>LazyGit<CR>";
+      key = "<leader>lg";
       options = {
         silent = true;
       };
