@@ -14,5 +14,6 @@
     ./which-key.nix
     ./nvim-tree.nix
     ./lazygit.nix
+    ./nvim-surround.nix
   ];
 }
