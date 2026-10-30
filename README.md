@@ -1,9 +1,6 @@
-# Nixvim template
+# Betmut Nixvim 
 
-This template gives you a good starting point for configuring Nixvim standalone.
-See [Standalone Usage] for more detail.
-
-[Standalone Usage]: https://nix-community.github.io/nixvim/platforms/standalone.html
+My personal Nixvim config with `gruvbox-material` dark theme.
 
 ## Configuring
 
@@ -17,4 +14,25 @@ To test your configuration simply run the following command
 
 ```
 nix run .
+```
+
+## Usage
+in `flake.nix`
+```nix
+{
+    inputs = {
+        nixvim = {
+              url = "github:betmut/nixvim-config";
+              inputs.nixpkgs.follows = "nixpkgs";
+            };
+        };
+}
+```
+
+in home manager configuration
+
+```nix
+  home.packages = with pkgs; [
+    inputs.nixvim.packages.${pkgs.stdenv.hostPlatform.system}.defaul
+  ];
 ```
