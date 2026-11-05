@@ -8,6 +8,10 @@
       bashls.enable = true;		# Bash LSP
       nushell.enable = true;		# Nushell LSP
       clangd.enable = true; 		# C/C++ LSP
+      racket_langserver = {		# Racket LSP
+	enable = true;
+	package = null;
+      };
 
       lua_ls = {
 	enable = true;
